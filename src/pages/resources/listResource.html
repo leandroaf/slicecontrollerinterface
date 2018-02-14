@@ -173,9 +173,9 @@
             </span>
           </a>
           <ul class="treeview-menu active">
-            <li><a href="listResource.html"><i class="fa fa-circle-o"></i> List All Resources</a></li>
+            <li class="active"><a href="listResource.html"><i class="fa fa-circle-o"></i> List All Resources</a></li>
             <li><a href="addResource.html"><i class="active fa fa-circle-o"></i> Add Resource</a></li>
-            <li class="active"><a href="removeResource.html"><i class="fa fa-circle-o"></i> Remove Resource</a></li>
+            <li><a href="removeResource.html"><i class="fa fa-circle-o"></i> Remove Resource</a></li>
             <li><a href="updateResource.html"><i class="fa fa-circle-o"></i> Update Resource</a></li>
           </ul>
         </li>
@@ -204,45 +204,85 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Remove Resources
+        List All Resources
         <small></small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-laptop"></i> Resources</a></li>
-        <li><a href="#">Remove Resource</a></li>
+        <li><a href="#">List All Resources</a></li>
       </ol>
     </section>
 
-    <!-- Main content -->
+<!-- Main content -->
     <section class="content">
       <div class="row">
-        <!-- left column -->
-        <div class="col-md-6">
-          <!-- general form elements -->
-          <div class="box box-primary">
-            <div class="box-header with-border">
-              <h3 class="box-title">Insert slice ID or slice name</h3>
+
+          <!-- Hardware 1-->
+          <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-orange">
+              <div class="inner">
+                <h3><sup style="font-size: 20px">Hardware</sup></h3>
+                <h3><sup style="font-size: 16px">Processing:<p><p> 4 CPUs, 12 Cores, 2.0 GHz</sup></h3>                
+                <p>Memory: 32 GB RAM</p>
+                <p>Storage: 2 TB</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-stats-bars"></i>
+              </div>
             </div>
-
-            <form role="form">
-
-              <div class="input-group margin">
-                <input type="text" class="form-control">
-                    <span class="input-group-btn">
-                      <button type="button" class="btn btn-info btn-flat">Search slice</button>
-                    </span>
-              </div>
-
-              <div class="box-footer">
-              </div>
-
-            </form>
-
           </div>
-        </div>
-    <!-- /.row -->
-    </section>
 
+          <!-- Hardware 2-->
+          <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-green">
+              <div class="inner">
+                <h3><sup style="font-size: 20px">Hardware</sup></h3>
+                <h3><sup style="font-size: 16px">Processing:<p><p> 6 CPUs, 8 Cores, 3.0 GHz</sup></h3>                
+                <p>Memory: 40 GB RAM</p>
+                <p>Storage: 4 TB</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-stats-bars"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hardware 3-->
+          <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-blue">
+              <div class="inner">
+                <h3><sup style="font-size: 20px">Hardware</sup></h3>
+                <h3><sup style="font-size: 16px">Processing:<p><p> 8 CPUs, 6 Cores, 2.5 GHz</sup></h3>                
+                <p>Memory: 48 GB RAM</p>
+                <p>Storage:  5 TB</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-stats-bars"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hardware 4-->
+          <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-red">
+              <div class="inner">
+                <h3><sup style="font-size: 20px">Hardware</sup></h3>
+                <h3><sup style="font-size: 16px">Processing:<p><p> 8 CPUs, 14 Cores, 2.6 GHz</sup></h3>                
+                <p>Memory: 64 GB RAM</p>
+                <p>Storage:  6 TB</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-stats-bars"></i>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </section>  
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
