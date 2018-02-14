@@ -196,8 +196,6 @@
     <!-- /.sidebar -->
   </aside>
 
-
-  <!-- Content Wrapper. Contains page content -->
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -220,16 +218,18 @@
         <div class="col-md-6">
           <!-- general form elements -->
           <div class="box box-primary">
+
             <div class="box-header with-border">
               <h3 class="box-title">Select VIM</h3>
             </div>
+
             <!-- form start -->
             <form role="form">
 
               <div class="box-body">
 
                <div class="form-group">
-                   <input type="radio" name="r3" class="flat-red" checked>
+                   <input type="radio" name="r3" class="flat-red">
                    <b>VLSP&nbsp</b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
                     <label>
                       <form action="">
@@ -247,14 +247,13 @@
                       <form action="">
                       </form>
                       <form action="configureKubernetes.html">
-                        <button type="configureKubernetes" class="btn btn-success">Configure</button>
+                        <button type="configureKubernetes" class="btn btn-success" disabled>Configure</button>
                       </form>
                   </label>
                 </div>
 
-
                 <div class="form-group">
-                   <input type="radio" name="r3" class="flat-red">
+                   <input type="radio" name="r3" class="flat-red" checked>
                    <b>OpenStack</b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
                     <label>
                       <form action="">
@@ -269,7 +268,44 @@
 
           </div>
           </div>
+        </div>
+
+        <!-- right column -->
+        <div class="col-md-6">
+          <!-- Horizontal Form -->
+          <div class="box box-info">
+            <div class="box-header with-border">
+              <h3 class="box-title">Informations</h3>
+            </div>
+
+            <form role="form">
+
+              <div class="box-footer">
+
+                  <label for="userInputName">User name</label> 
+                  <input type="userName" class="form-control" id="userInputName" placeholder="Enter user name"> <p> <p> <p>
+                  <label for="">Token</label> <p>
+                  <button type="generateToken" class="btn btn-info">Generate token</button> or <p> <p> 
+
+                  <input type="file" id="selectTokenInputFile"> <p> <p>
+
+                  <input type="token" class="form-control" id="tokenInput" placeholder="Token" style="width:200px" disabled>
+
+              </div>
+
+           </form>
+
+          </form>
+
           </div>
+
+           <div class="box-footer">             
+              <form action="configureKubernetes.html">
+                  <button type="selectTemplate" class="btn btn-primary">Save informations</button>
+              </form>
+           </div>
+
+        </div>
         </div>
   <!-- /.row -->
   </section>
