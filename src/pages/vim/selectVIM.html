@@ -188,8 +188,6 @@
           </a>
           <ul class="treeview-menu">
             <li class="active"><a href="selectVIM.html"><i class="fa fa-circle-o"></i> Select VIM</a></li>
-            <li><a href="selectTemplate.html"><i class="fa fa-circle-o"></i> Select Template</a></li>
-            <li><a href="customizeTemplate.html"><i class="fa fa-circle-o"></i> Customize Template</a></li>
           </ul>
         </li>
       </ul>
@@ -230,37 +228,56 @@
 
               <div class="box-body">
 
-                <!-- radio -->
-                <div class="form-group">
-                  <label>
-                    <input type="radio" name="r3" class="flat-red" checked>
-                    VLSP
-                  </label>
-                </div>  
-
-                <div class="form-group">
-                  <label>
-                    <input type="radio" name="r3" class="flat-red">
-                    Kubernetes
+               <div class="form-group">
+                   <input type="radio" name="r3" class="flat-red">
+                   <b>VLSP</b>
+                    <label>
+                      <form action="">
+                      </form>
+                      <form action="configureKubernetes.html">
+                        <button type="configureKubernetes" class="btn btn-success" disabled>Configure</button>
+                      </form>
                   </label>
                 </div>
 
                 <div class="form-group">
-                  <label>
-                    <input type="radio" name="r3" class="flat-red">
-                    OpenStack
+                   <input type="radio" name="r3" class="flat-red">
+                   <b>OpenStack</b>
+                    <label>
+                      <form action="">
+                      </form>
+                      <form action="configureKubernetes.html">
+                        <button type="configureKubernetes" class="btn btn-success">Configure</button>
+                      </form>
                   </label>
                 </div>
-              
-              </div>
+
+
+                <div class="form-group">
+                   <input type="radio" name="r3" class="flat-red">
+                   <b>OpenStack</b>
+                    <label>
+                      <form action="">
+                      </form>
+                      <form action="configureKubernetes.html">
+                        <button type="configureKubernetes" class="btn btn-success">Configure</button>
+                      </form>
+                  </label>
+                </div>
+
+
+
 
            </form>
 
            <div class="box-footer">             
-              <form action="selectTemplate.html">
+              <form action="configureKubernetes.html">
                   <button type="selectTemplate" class="btn btn-primary">Save and select template</button>
               </form>
            </div>
+
+          </div>
+          </div>
           </div>
         </div>
   <!-- /.row -->
