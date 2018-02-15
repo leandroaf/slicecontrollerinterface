@@ -176,7 +176,7 @@
             <li><a href="listResource.html"><i class="fa fa-circle-o"></i> List All Resources</a></li>
             <li class="active"><a href="addResource.html"><i class="active fa fa-circle-o"></i> Add Resource</a></li>
             <li><a href="removeResource.html"><i class="fa fa-circle-o"></i> Remove Resource</a></li>
-            <li><a href="updateResource.html"><i class="fa fa-circle-o"></i> Update Resource</a></li>
+            <li><a href="transformableResources.html"><i class="fa fa-circle-o"></i> Transformable Resources</a></li>
           </ul>
         </li>
 
@@ -196,7 +196,6 @@
     </section>
     <!-- /.sidebar -->
   </aside>
-
 
   <!-- Content Wrapper. Contains page content -->
   <!-- Content Wrapper. Contains page content -->
@@ -224,133 +223,14 @@
             <div class="box-header with-border">
               <h3 class="box-title">Bare-Metal</h3>
             </div>
-            <!-- /.box-header -->
 
-            <!-- form start -->
             <form role="form">
-
               <div class="box-footer">
-                  <label for="hostInputName">Host Name</label>
-                  <input type="hostName" class="form-control" id="hostInputName" placeholder="Enter host name">
-              </div>
-
-              <div class="box-body">
-
-                <label class="control-label" for="selectResources"><i class=""></i> Processing:</label>
-                </p>
-                <!-- radio -->
-                <div class="form-group">
-                  <label>
-                    <input type="radio" name="r3" class="flat-red" checked>
-                    4 CPUs, 12 Cores, 2.0 GHz
-                  </label>
-                </div>  
-
-                <div class="form-group">
-                  <label>
-                    <input type="radio" name="r3" class="flat-red">
-                    6 CPUs, 8 Cores, 3.0 GHz
-                  </label>
-                </div>
-
-                <div class="form-group">
-                  <label>
-                    <input type="radio" name="r3" class="flat-red">
-                    8 CPUs, 6 Cores, 2.5 GHz
-                  </label>
-                </div>
-
-                <div class="form-group">
-                  <label>
-                    <input type="radio" name="r3" class="flat-red">
-                    8 CPUs, 14 Cores, 2.6 GHz
-                  </label>
-                </div>
-              
-              </div>
-
-           </form>
-
-            <!-- form start -->
-            <form role="form">
-
-              <div class="box-body">
-
-                <label class="control-label" for="selectResources"><i class=""></i> Memory:</label>
-                </p>
-                <!-- radio -->
-                <div class="form-group">
-                  <label>
-                    <input type="radio" name="r3" class="flat-red" checked>
-                    32 GB RAM
-                  </label>
-                </div>  
-
-                <div class="form-group">
-                  <label>
-                    <input type="radio" name="r3" class="flat-red">
-                    40 GB RAM
-                  </label>
-                </div>
-
-                <div class="form-group">
-                  <label>
-                    <input type="radio" name="r3" class="flat-red">
-                    48 GB RAM
-                  </label>
-                </div>
-
-                <div class="form-group">
-                  <label>
-                    <input type="radio" name="r3" class="flat-red">
-                    64 GB RAM
-                  </label>
-                </div>
-              
-              </div>
-
-           </form>           
-
-            <!-- form start -->
-            <form role="form">
-
-              <div class="box-body">
-
-                <label class="control-label" for="selectResources"><i class=""></i> Storage:</label>
-                </p>
-                <!-- radio -->
-                <div class="form-group">
-                  <label>
-                    <input type="radio" name="r3" class="flat-red" checked>
-                    2 TB
-                  </label>
-                </div>  
-
-                <div class="form-group">
-                  <label>
-                    <input type="radio" name="r3" class="flat-red">
-                    4 TB
-                  </label>
-                </div>
-
-                <div class="form-group">
-                  <label>
-                    <input type="radio" name="r3" class="flat-red">
-                    5 TB
-                  </label>
-                </div>
-
-                <div class="form-group">
-                  <label>
-                    <input type="radio" name="r3" class="flat-red">
-                    6 TB
-                  </label>
-                </div>
-              
-              </div>
-
-              <div class="box-footer">
-                <button type="anotherVM" class="btn btn-primary">Another Host</button>
+                <form action="addHardware.html">
+                </form>
+                <form action="addHardware.html">
+                  <button type="addHardware" class="btn btn-primary">Add Hardware</button>
+                </form>
               </div>
 
            </form>
@@ -367,130 +247,14 @@
               <h3 class="box-title">Virtual Machine</h3>
             </div>
 
-            <form role="form">
-
-              <div class="box-footer">
-                  <label for="vmInputName">VM Name</label>
-                  <input type="vmName" class="form-control" id="vmInputName" placeholder="Enter VM name">
-              </div>
-
-              <div class="box-body">
-
-                <label class="control-label" for="selectResources"><i class=""></i> Processing:</label>
-                </p>
-                <!-- radio -->
-                <div class="form-group">
-                  <label>
-                    <input type="radio" name="r3" class="flat-red" checked>
-                    4 CPUs, 12 Cores, 2.0 GHz
-                  </label>
-                </div>  
-
-                <div class="form-group">
-                  <label>
-                    <input type="radio" name="r3" class="flat-red">
-                    6 CPUs, 8 Cores, 3.0 GHz
-                  </label>
-                </div>
-
-                <div class="form-group">
-                  <label>
-                    <input type="radio" name="r3" class="flat-red">
-                    8 CPUs, 6 Cores, 2.5 GHz
-                  </label>
-                </div>
-
-                <div class="form-group">
-                  <label>
-                    <input type="radio" name="r3" class="flat-red">
-                    8 CPUs, 14 Cores, 2.6 GHz
-                  </label>
-                </div>
-              
-              </div>
-
-           </form>
-
             <!-- form start -->
             <form role="form">
-
-              <div class="box-body">
-
-                <label class="control-label" for="selectResources"><i class=""></i> Memory:</label>
-                </p>
-                <!-- radio -->
-                <div class="form-group">
-                  <label>
-                    <input type="radio" name="r3" class="flat-red" checked>
-                    32 GB RAM
-                  </label>
-                </div>  
-
-                <div class="form-group">
-                  <label>
-                    <input type="radio" name="r3" class="flat-red">
-                    40 GB RAM
-                  </label>
-                </div>
-
-                <div class="form-group">
-                  <label>
-                    <input type="radio" name="r3" class="flat-red">
-                    48 GB RAM
-                  </label>
-                </div>
-
-                <div class="form-group">
-                  <label>
-                    <input type="radio" name="r3" class="flat-red">
-                    64 GB RAM
-                  </label>
-                </div>
-              
-              </div>
-
-           </form>           
-
-            <!-- form start -->
-            <form role="form">
-
-              <div class="box-body">
-
-                <label class="control-label" for="selectResources"><i class=""></i> Storage:</label>
-                </p>
-                <!-- radio -->
-                <div class="form-group">
-                  <label>
-                    <input type="radio" name="r3" class="flat-red" checked>
-                    2 TB
-                  </label>
-                </div>  
-
-                <div class="form-group">
-                  <label>
-                    <input type="radio" name="r3" class="flat-red">
-                    4 TB
-                  </label>
-                </div>
-
-                <div class="form-group">
-                  <label>
-                    <input type="radio" name="r3" class="flat-red">
-                    5 TB
-                  </label>
-                </div>
-
-                <div class="form-group">
-                  <label>
-                    <input type="radio" name="r3" class="flat-red">
-                    6 TB
-                  </label>
-                </div>
-              
-              </div>
-
               <div class="box-footer">
-                <button type="anotherVM" class="btn btn-primary">Another VM</button>
+               <form action="addVM.html">
+               </form>
+               <form action="addVM.html">
+                <button type="addVM" class="btn btn-info">Add VM</button>
+               </form> 
               </div>
             </form>
 
@@ -499,16 +263,8 @@
         <!--/.col (right) -->
       </div>
 
-    <div class="box-footer">
-       <form action="../vim/selectVIM.html">
-          <button type="selectVIM" class="btn btn-primary">Save and select VIM</button>
-       </form>
-    </div>
-
       <!-- /.row -->
     </section>
-
-
 
     <!-- /.content -->
   </div>

@@ -174,9 +174,9 @@
           </a>
           <ul class="treeview-menu active">
             <li><a href="listResource.html"><i class="fa fa-circle-o"></i> List All Resources</a></li>
-            <li><a href="addResource.html"><i class="active fa fa-circle-o"></i> Add Resource</a></li>
+            <li class="active"><a href="addResource.html"><i class="active fa fa-circle-o"></i> Add Resource</a></li>
             <li><a href="removeResource.html"><i class="fa fa-circle-o"></i> Remove Resource</a></li>
-            <li class="active"><a href="updateResource.html"><i class="fa fa-circle-o"></i> Update Resource</a></li>
+            <li><a href="transformableResources.html"><i class="fa fa-circle-o"></i> Transformable Resources</a></li>
           </ul>
         </li>
 
@@ -204,45 +204,116 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Update Resources
+        Add VM
         <small></small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-laptop"></i> Resources</a></li>
-        <li><a href="#">Update Resource</a></li>
+        <li><a href="#">Add VM</a></li>
       </ol>
     </section>
 
-        <!-- Main content -->
+    <!-- Main content -->
     <section class="content">
+
       <div class="row">
         <!-- left column -->
         <div class="col-md-6">
           <!-- general form elements -->
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">Insert slice ID or slice name</h3>
+              <h3 class="box-title">Virtual Machine</h3>
             </div>
+            <!-- /.box-header -->
 
+            <!-- form start -->
             <form role="form">
 
-              <div class="input-group margin">
-                <input type="text" class="form-control">
-                    <span class="input-group-btn">
-                      <button type="button" class="btn btn-info btn-flat">Search slice</button>
-                    </span>
-              </div>
-
               <div class="box-footer">
+                  <label for="processorInputFeatures">Processor specification:</label>
+                  <input type="processorFeatures" class="form-control" id="processorInputName" style="width:200px"  placeholder="Processor speed"> <br>
+                  <input type="processorFeatures" class="form-control" id="processorInputName" style="width:200px" placeholder="Number of cores"> <br>
+                  <input type="processorFeatures" class="form-control" id="processorInputName" style="width:200px" placeholder="Processor cache"> <br>
+                  
+                  <b>Amount</b>:
+                  <input type="number" name="quantity" min="1" max="500"> <br> <br>
+                  <button type="saveProcessor" class="btn btn-info">Another Processor</button> <br> <br>
+                  <button type="saveProcessor" class="btn btn-primary">Add processor</button>
               </div>
 
-            </form>
+           </form>
 
           </div>
         </div>
-  <!-- /.row -->
-  </section>
 
+      <!-- /.row -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+
+      <div class="row">
+        <!-- left column -->
+        <div class="col-md-6">
+          <!-- general form elements -->
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Virtual Machine</h3>
+            </div>
+            <!-- /.box-header -->
+
+            <!-- form start -->
+            <form role="form">
+
+              <div class="box-footer">
+                  <label for="memoryInput">Memory:</label>
+                  <input type="memoryFeatures" class="form-control" id="memoryInput" style="width:200px" placeholder="Computer memory"> <br>
+                  <b>Amount</b>:
+                  <input type="number" name="quantity" min="1" max="500"> <br> <br>
+                  <button type="saveProcessor" class="btn btn-info">Another Memory</button> <br> <br>
+                  <button type="saveProcessor" class="btn btn-primary">Add memory</button>
+              </div>
+
+           </form>
+
+          </div>
+        </div>
+
+      <!-- /.row -->
+    </section>
+
+        <!-- Main content -->
+    <section class="content">
+
+      <div class="row">
+        <!-- left column -->
+        <div class="col-md-6">
+          <!-- general form elements -->
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Virtual Machine</h3>
+            </div>
+            <!-- /.box-header -->
+
+            <!-- form start -->
+            <form role="form">
+
+              <div class="box-footer">
+                  <label for="storageInput">Storage:</label>
+                  <input type="storage" class="form-control" id="storageInput" style="width:200px" placeholder="Computer storage"><br>
+                  <b>Amount</b>:
+                  <input type="number" name="quantity" min="1" max="500"> <br> <br>
+                  <button type="saveProcessor" class="btn btn-info">Another Storage</button> <br> <br>
+                  <button type="saveProcessor" class="btn btn-primary">Add storage</button>
+              </div>
+
+           </form>
+
+          </div>
+        </div>
+
+      <!-- /.row -->
+    </section>
 
     <!-- /.content -->
   </div>
